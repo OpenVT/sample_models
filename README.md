@@ -32,6 +32,7 @@ Assumptions?
 <img src='PhysiCell/division_no_death/frame0001.png' width='200'><img src='PhysiCell/division_no_death/frame0085.png' width='200'><img src='PhysiCell/division_no_death/frame0106.png' width='200'><img src='PhysiCell/division_no_death/frame0720.png' width='200'>
 
 ![](PhysiCell/division_no_death/division_no_death.gif)
+![](PhysiCell/division_no_death/division_no_death_color_volume.gif)
 
 ### --- CC3D ---
 
