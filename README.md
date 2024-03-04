@@ -6,7 +6,7 @@ Sample models to compare across frameworks. This repository will describe (and e
 * cell volume
 * cell mechanics: adhesion/repulsion
 * cell mechanics: spring
-* cell motility: random/directed
+* cell motility
 * cell chemotaxis
 * cell secretion
 * cell morphology
@@ -38,8 +38,24 @@ Assumptions?
 
 <hr>
 
+## ----- cell motility
+### --- PhysiCell ---
+<img src='PhysiCell/motility_sample1/motility_params.png' width='500'>
+<img src='PhysiCell/motility_sample1/motility_substrate.png' width='500'>
+
+![](PhysiCell/motility_sample1/motility_sample1.gif)
+
+
+### --- CC3D ---
+
+
+<hr>
+
 ## ----- tumor growth with heterogeneity
 ### --- PhysiCell ---
 ![](PhysiCell/tumor_heterog/tumor_heterog.gif)
+
+### --- CC3D ---
+
 
 
