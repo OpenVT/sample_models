@@ -33,6 +33,7 @@ Assumptions?
 
 ![](PhysiCell/division_no_death/division_no_death.gif)
 ![](PhysiCell/division_no_death/division_no_death_color_volume.gif)
+<br>The two animations are not syncronized - the gray-colored cells captures more frames; the colored cells highlight their different volumes.
 
 ### --- CC3D ---
 
