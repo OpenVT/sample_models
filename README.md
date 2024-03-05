@@ -13,17 +13,17 @@ Sample models to compare across frameworks. This repository will describe (and e
 * cell fusion
 
 # Level 1 processes:
-* [cell chemotaxis](cell-chemotaxis)
+* [cell chemotaxis](#cell-chemotaxis)
 * buckling morphogenesis
 
 # Level 2 processes:
 * monolayer growth without diffusion
 * cell sorting
 * wound healing
-* tumor growth with heterogeneity
-* basic immunology: epithelial cells, virus, macrophages, [other immune cells]
+* [tumor growth with heterogeneity](#tumor-growth-with-heterogeneity)
+* basic immunology: epithelial cells, virus, macrophages, more
 
-Assumptions?
+# Assumptions?
 * default cell volume (e.g., 2494 microns^3)
 * default cell cycle --> growth rate(s)
 * default cell division criteria
@@ -58,7 +58,7 @@ Assumptions?
 
 <hr>
 
-## ----- tumor growth with heterogeneity
+## tumor growth with heterogeneity
 ### --- PhysiCell ---
 ![](PhysiCell/tumor_heterog/tumor_heterog.gif)
 
