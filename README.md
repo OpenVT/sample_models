@@ -1,22 +1,27 @@
 # sample_models
 Sample models to compare across frameworks. This repository will describe (and eventually host or link to) sample models - 2D and 3D, simple and more complex.
 
-* cell cycle(s): proliferation
+# Level 0 processes:
+* cell cycle(s): [cell growth and division](#cell-growth-and-division) 
 * cell death(s)
-* cell volume
 * cell mechanics: adhesion/repulsion
 * cell mechanics: spring
 * cell motility
-* cell chemotaxis
 * cell secretion
-* cell morphology
 * cell differentiation
 * cell phagocytosis
 * cell fusion
-* monolayer growth
+
+# Level 1 processes:
+* [cell chemotaxis](cell-chemotaxis)
+* buckling morphogenesis
+
+# Level 2 processes:
+* monolayer growth without diffusion
 * cell sorting
 * wound healing
 * tumor growth with heterogeneity
+* basic immunology: epithelial cells, virus, macrophages, [other immune cells]
 
 Assumptions?
 * default cell volume (e.g., 2494 microns^3)
@@ -26,7 +31,8 @@ Assumptions?
 
 <hr>
 
-## ----- Cell division, no death
+## cell growth and division
+
 ### stochastic division, approx every 12 hrs
 ### --- PhysiCell ---
 <img src='PhysiCell/division_no_death/frame0001.png' width='200'><img src='PhysiCell/division_no_death/frame0085.png' width='200'><img src='PhysiCell/division_no_death/frame0106.png' width='200'><img src='PhysiCell/division_no_death/frame0720.png' width='200'>
@@ -39,7 +45,7 @@ Assumptions?
 
 <hr>
 
-## ----- cell motility
+## cell chemotaxis
 ### --- PhysiCell ---
 <img src='PhysiCell/motility_sample1/motility_params.png' width='500'>
 <img src='PhysiCell/motility_sample1/motility_substrate.png' width='500'>
