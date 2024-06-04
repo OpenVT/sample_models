@@ -3,6 +3,8 @@ import numpy as np
 import pandas as pd
 from shutil import rmtree
 import pcdl
+import glob 
+import os 
 
 def summary_function(OutputFolder,SummaryFile, dic_params, SampleID, ReplicateID):
     mcds_ts = pcdl.TimeSeries(OutputFolder, microenv=False, graph=False, settingxml=None, verbose=False)
@@ -52,7 +54,7 @@ def summary_function(OutputFolder,SummaryFile, dic_params, SampleID, ReplicateID
     rmtree( OutputFolder )
     df.to_csv(SummaryFile, sep='\t', encoding='utf-8')
 
-if __name__ == '__main__':
+def Test_Model():
     PhysiCellModel = PhysiCell_Model("config/PhysiCell_Model.ini", 'physicell_model')
     
     Parameters_dic = {1: np.array([0.1,'linear']), 
@@ -67,3 +69,28 @@ if __name__ == '__main__':
         for replicateID in np.arange(PhysiCellModel.numReplicates):
             print('Sample: ', sampleID,', Replicate: ', replicateID)
             PhysiCellModel.RunModel(SampleID=sampleID, ReplicateID=replicateID,Parameters=par_value, ParametersRules=par_rules_value, SummaryFunction=summary_function)
+
+def Read_csv(file):
+    return pd.read_csv(file, delimiter='\t')
+
+def Merger_dataframes(output_folder, SummaryFilesExp, MergedFile):
+    # merging the files 
+    joined_files = os.path.join(output_folder, SummaryFilesExp) 
+    
+    # A list of all joined files is returned 
+    joined_list = glob.glob(joined_files) 
+    print(joined_list)
+    
+    # Finally, the files are joined 
+    df = pd.concat(map(Read_csv, joined_list), ignore_index=True) 
+    print(df.head()) 
+    df.to_csv(MergedFile, sep='\t', encoding='utf-8')
+
+if __name__ == '__main__':
+    # Test_Model()
+
+    # Merge dataframes
+    output_folder = "output_test"
+    SummaryFilesExp = "SummaryFile_00*.csv"
+    MergedFile = "merged_df.csv"
+    Merger_dataframes(output_folder, SummaryFilesExp, MergedFile)
