@@ -6,6 +6,10 @@ import pcdl
 
 from uq_physicell.uq_physicell import PhysiCell_Model
 
+comm = MPI.COMM_WORLD
+size = comm.Get_size()
+rank = comm.Get_rank()
+
 def summary_function(OutputFolder,SummaryFile, dic_params, SampleID, ReplicateID):
     mcds_ts = pcdl.TimeSeries(OutputFolder, microenv=False, graph=False, settingxml=None, verbose=False)
     # Initial condition
