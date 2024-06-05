@@ -57,8 +57,8 @@ def summary_function(OutputFolder,SummaryFile, dic_params, SampleID, ReplicateID
 def Test_Model():
     PhysiCellModel = PhysiCell_Model("config/PhysiCell_Model.ini", 'physicell_model')
     
-    Parameters_dic = {1: np.array([0.1,'linear']), 
-                      2: np.array([0.3,'half gaussian']), 
+    Parameters_dic = {1: np.array([0.5,'linear']), 
+                      2: np.array([0.5,'half gaussian']), 
                       3: np.array([0.5,'exponential decay'])} # dic of parameters sample
     Parameters_rule_dic = {1: np.array([0.5,1.0,0.001,0.005]), 
                            2: np.array([0.75,0.5,0.003,0.001]), 
