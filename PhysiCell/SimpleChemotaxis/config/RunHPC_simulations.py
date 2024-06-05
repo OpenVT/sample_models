@@ -65,7 +65,7 @@ if __name__ == '__main__':
     Parameters_dic = {} # dic of parameters sample
     Parameters_rule_dic = {} # dic of parameters rule sample
     sample_cout = 0
-    for base_migration_bias in [0.1]:
+    for base_migration_bias in [0.5]:
         for substrate_field in ['linear','half gaussian','exponential decay']:
             for saturation_bias in [0.5,0.75,1.0]:
                 for saturation_speed in [0.5,0.75,1.0]:
