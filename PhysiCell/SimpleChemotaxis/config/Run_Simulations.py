@@ -90,7 +90,7 @@ if __name__ == '__main__':
     # Test_Model()
 
     # Merge dataframes
-    output_folder = "output_test"
+    output_folder = "output_exp"
     SummaryFilesExp = "SummaryFile_00*.csv"
     MergedFile = "merged_df.csv"
     Merger_dataframes(output_folder, SummaryFilesExp, MergedFile)
